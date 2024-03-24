@@ -1,0 +1,205 @@
+@use "./fonts" as *;
+@use "./fontsizes" as *;
+@use "./dimensions" as *;
+@use "./icons" as *;
+@use "./colors" as *;
+@use "./scrollbar" as *;
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*:focus {
+	outline: 2px solid $main;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0 auto;
+	padding: $mobile-app-padding;
+	max-width: $mobile-app-max-width;
+	font-family: $default-font, sans-serif;
+	font-size: $mobile-text;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-direction: column;
+	gap: $mobile-container-gap;
+}
+
+.area {
+	display: flex;
+	flex-direction: column;
+	gap: $mobile-area-gap;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: $box-background;
+	padding: $mobile-box-padding;
+	border-radius: $mobile-box-corner-radius;
+}
+
+.box-header {
+	padding-bottom: $mobile-box-padding;
+	border-bottom: solid 1px $element-stroke;
+}
+
+.box-heading {
+	margin-bottom: 10px;
+
+}
+
+.box-subtitle {
+	color: $text-light;
+}
+
+.shapes,
+.initial-values,
+.graph {
+	padding: $mobile-box-padding 0;
+	flex-grow: 1;
+}
+
+.shapes-box {
+	flex: 1;
+	overflow: hidden;
+	padding-bottom: 0;
+	max-height: 30rem;
+}
+
+.shapes {
+	display: grid;
+	gap: $mobile-box-gap 0;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	overflow-y: scroll;
+	overflow-x: visible;
+	padding-right: $mobile-box-padding;
+}
+
+.shape {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.shape-button {
+	height: 70px;
+	width: 70px;
+	border: none;
+	border-radius: 50%;
+	background-color: $element-background;
+	background-size: contain;
+	pointer-events: none;
+	transition: outline .1s ease;
+}
+
+.shape:hover > .shape-button{
+	outline: 2px solid $main-highlight;
+}
+
+.shape-active {
+	outline: 4px solid $main;
+}
+
+.shape-label {
+	text-align: center;
+	pointer-events: none;
+}
+
+.initial-values-box {
+	flex: 3;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	flex-grow: 1;
+}
+
+input {
+	display: block;
+	flex-grow: 1;
+	margin-left: 20px;
+	background: $element-background;
+	border: solid 1px $element-stroke;
+	border-radius: $mobile-element-corner-radius;
+	padding: $mobile-element-padding;
+	font-size: $mobile-text;
+}
+
+label {
+	text-transform: capitalize;
+}
+
+.button-box {
+	display: flex;
+}
+
+.button {
+	border: none;
+	background-color: $main;
+	color: white;
+	padding: $mobile-element-padding;
+	border-radius: $mobile-element-corner-radius;
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+	cursor: pointer;
+	flex-grow: 1;
+	font-size: $mobile-text;
+}
+
+.button:hover, .button:focus {
+	background-color: $main-highlight;
+}
+
+.results-box {
+	flex-grow: 1;
+}
+
+.results {
+	display: flex;
+	padding: 20px 0;
+	text-transform: capitalize;
+}
+
+.result {
+	padding-right: 20px;
+	margin-left: 20px;
+	border-right: solid 1px $element-stroke;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+
+	&:last-child {
+		border: none;
+	}
+}
+
+.result-value {
+	font-weight: bold;
+}
+
+.graph {
+	background: $element-background;
+	border: solid 1px $element-stroke;
+	border-radius: $mobile-element-corner-radius;
+}
+
+@import "./media";
+

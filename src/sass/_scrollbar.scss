@@ -1,0 +1,32 @@
+@use "./colors" as *;
+
+div {
+	::-webkit-scrollbar {
+		width: 1rem;
+		overflow: visible;
+	}
+	::-webkit-scrollbar-track {
+		background: #00000011;
+		border-radius: 5rem;
+		margin: 1rem;
+	}
+	::-webkit-scrollbar-thumb {
+		background: $main;
+		border-radius: 5rem;
+		padding: 2rem 0;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: $main-highlight;
+	}
+	::-webkit-scrollbar-button:start,
+	::-webkit-scrollbar-button:end {
+		display: block;
+		height: 3px;
+	}
+	::-webkit-scrollbar-button:start {
+		margin-top: 10px;
+	}
+	::-webkit-scrollbar-button:end {
+		margin-bottom: 10px;
+	}
+}
