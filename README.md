@@ -44,6 +44,10 @@ The goal of the application is calculating basic properties of geometric figures
    <li>adding dark theme</li>
   </ul>
 
+## Feedback
+
+All of the feedback and constructive criticism is welcome, please do not hesitate to point out every issue present in the code or structure of the project. This information will be invaluable in my learning journey.
+
 ## License
 
 See the [LICENSE](LICENSE.md) for the information about usage of this project.
