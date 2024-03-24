@@ -4,10 +4,12 @@
   <h1 align="center">Geometry calculator</h1>
 
   <h2 align="center">Version 1.0.0</h2>
+   <strong>This project is in a WIP state, many functions will be changed and refined over time!</strong>
+
 
   <p>
     Calculate basic properties of a simple geometric shapes and solids all in one place.<br><br>
-    <strong>This project is in a WIP state, many functions will be changed and refined over time!</strong>
+   
   </p>
 
 <details>
