@@ -1,15 +1,13 @@
 
 <a name="readme-top"></a>
 
-
-
-
-
   <h3 align="center">Geometry calculator</h3>
 
+  version 1.0.0
+
   <p align="center">
-    Calculate basic properties of a simple geometric shapes and solids all in one place.
-    <br />
+    Calculate basic properties of a simple geometric shapes and solids all in one place.<br><br>
+    <strong>This project is in a WIP state, many functions will be changed and refined over time!</strong>
 
 <details>
   <summary>Table of Contents</summary>
@@ -36,16 +34,19 @@ I created this simple calculator app to practice mathematic calculations, operat
     <li>Fabric.js (WIP)</li>
   </ul>
 
-## Roadmap
+## Work in progress
 
  <ul>
-    <li>HTML</li>
-    <li>SASS</li>
-    <li>Javascript</li>
-    <li>Gulp</li>
-    <li>Node.js</li>
-    <li>Fabric.js (WIP)</li>
+   <li>double checking the correctness of the used math formulas</li>
+   <li>units changing for input values and results</li>
+   <li>displaying a graph of a selected figure with accurate dimensions</li>
+   <li>keyboard based control of the application</li>
   </ul>
+
+## License
+
+See the [LICENSE](LICENSE.md) for the information about usage of this project.
+
   
 
 
