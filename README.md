@@ -1,20 +1,21 @@
 
 <a name="readme-top"></a>
 
-  <h3 align="center">Geometry calculator</h3>
+  <h1 align="center">Geometry calculator</h1>
 
-  version 1.0.0
+  <h2 align="center">Version 1.0.0</h2>
 
-  <p align="center">
+  <p>
     Calculate basic properties of a simple geometric shapes and solids all in one place.<br><br>
     <strong>This project is in a WIP state, many functions will be changed and refined over time!</strong>
+  </p>
 
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">Summary</a></li>
     <li><a href="#used-technologies">Used technologies</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#work-in-progress">Work in progress</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
