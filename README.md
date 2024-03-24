@@ -4,18 +4,13 @@
   <h1 align="center">Geometry calculator</h1>
 
   <h2 align="center">Version 1.0.0</h2>
-   <strong>This project is in a WIP state, many functions will be changed and refined over time!</strong>
 
-
-  <p>
-    Calculate basic properties of a simple geometric shapes and solids all in one place.<br><br>
+  <h3 align='center'><strong>This project is in a WIP state, much of the code is yet to be written, many functions will be changed and refined over time!</strong></h3>
    
-  </p>
-
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">Summary</a></li>
+    <li><a href="#about-the-project">About the project</a></li>
     <li><a href="#used-technologies">Used technologies</a></li>
     <li><a href="#work-in-progress">Work in progress</a></li>
     <li><a href="#license">License</a></li>
@@ -25,6 +20,7 @@
 ## About the project
 
 I created this simple calculator app to practice mathematic calculations, operations on objects and arrays, aswell as working with js libraries.
+The goal of the application is calculating basic properties of geometric figures.
 
 ## Used technologies
 
@@ -40,10 +36,12 @@ I created this simple calculator app to practice mathematic calculations, operat
 ## Work in progress
 
  <ul>
-   <li>double checking the correctness of the used math formulas</li>
-   <li>units changing for input values and results</li>
-   <li>displaying a graph of a selected figure with accurate dimensions</li>
-   <li>keyboard based control of the application</li>
+   <li>double check the correctness of the used math formulas</li>
+   <li>adding menu for changing the units of both input and results values </li>
+   <li>adding a graph of a selected figure with accurate dimensions(Fabric.js)</li>
+   <li>improving accessibility (keyboard based control, missing alt tags)</li>
+   <li>expanding the collection of figures</li>
+   <li>adding dark theme</li>
   </ul>
 
 ## License
