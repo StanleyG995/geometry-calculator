@@ -15,79 +15,86 @@
 <body>
   <main class="main">
     <div class="container">
-      <div class="input-area area">
-        <div class="shapes-box box">
-          <div class="box-header">
-            <h2 class="box-heading">Choose a shape</h2>
-            <p class="box-subtitle">Pick a shape or solid</p>
+      <header class="header">
+        <nav class="options box">
+          <h1>Geometry Calculator</h1>
+          <div class="theme-changer"><label for="theme-button">Change theme:</label>
+            <button id="theme-button" class="theme-button">
+            </button></div>
+          
+        </nav>
+      </header>
+      <section class="content">
+        <div class="input-area area">
+          <div class="shapes-box box">
+            <div class="box-header">
+              <h2 class="box-heading">Choose a shape</h2>
+              <p class="box-subtitle">Pick a shape or solid</p>
+            </div>
+            <div class="box-body shapes">
+              <div class="shape square"><button class="shape-button"></button><label class="shape-label">Square</label>
+              </div>
+              <div class="shape rectangle"><button class="shape-button"></button><label
+                  class="shape-label">Rectangle</label></div>
+              <div class="shape circle"><button class="shape-button"></button><label class="shape-label">Circle</label>
+              </div>
+              <div class="shape triangle"><button class="shape-button"></button><label
+                  class="shape-label">Triangle</label>
+              </div>
+              <div class="shape rhomboid"><button class="shape-button"></button><label
+                  class="shape-label">Rhomboid</label>
+              </div>
+              <div class="shape rhombus"><button class="shape-button"></button><label
+                  class="shape-label">Rhombus</label>
+              </div>
+              <div class="shape deltoid"><button class="shape-button"></button><label
+                  class="shape-label">Deltoid</label>
+              </div>
+              <div class="shape trapeze"><button class="shape-button"></button><label
+                  class="shape-label">Trapeze</label>
+              </div>
+              <div class="shape cube"><button class="shape-button"></button><label class="shape-label">Cube</label>
+              </div>
+              <div class="shape prism"><button class="shape-button"></button><label class="shape-label">Prism</label>
+              </div>
+              <div class="shape sphere"><button class="shape-button"></button><label class="shape-label">Sphere</label>
+              </div>
+              <div class="shape cyllinder"><button class="shape-button"></button><label
+                  class="shape-label">Cyllinder</label>
+              </div>
+              <div class="shape tetrahedron"><button class="shape-button"></button><label
+                  class="shape-label">Tetrahedron</label>
+              </div>
+              <div class="shape cone"><button class="shape-button"></button><label class="shape-label">Cone</label>
+              </div>
+            </div>
           </div>
-          <div class="box-body shapes">
-            <div class="shape square"><button class="shape-button"></button><label class="shape-label">Square</label>
+          <div class="initial-values-box box">
+            <div class="box-header">
+              <h2 class="box-heading">Cylinder</h2>
+              <p class="box-subtitle">Type in the dimensions</p>
             </div>
-            <div class="shape rectangle"><button class="shape-button"></button><label
-                class="shape-label">Rectangle</label></div>
-            <div class="shape circle"><button class="shape-button"></button><label class="shape-label">Circle</label>
+            <div class="box-body initial-values">
+              <div class="inputs">
+              </div>
             </div>
-            <div class="shape triangle"><button class="shape-button"></button><label class="shape-label">Triangle</label>
+            <div class="button-box">
+              <button class="button button-action">Calculate</button>
             </div>
-            <div class="shape rhomboid"><button class="shape-button"></button><label class="shape-label">Rhomboid</label>
-            </div>
-            <div class="shape rhombus"><button class="shape-button"></button><label class="shape-label">Rhombus</label>
-            </div>
-            <div class="shape deltoid"><button class="shape-button"></button><label class="shape-label">Deltoid</label>
-            </div>
-            <div class="shape trapeze"><button class="shape-button"></button><label class="shape-label">Trapeze</label>
-            </div>
-            <div class="shape cube"><button class="shape-button"></button><label class="shape-label">Cube</label>
-            </div>
-            <div class="shape prism"><button class="shape-button"></button><label class="shape-label">Prism</label>
-            </div>
-            <div class="shape sphere"><button class="shape-button"></button><label class="shape-label">Sphere</label>
-            </div>
-            <div class="shape cyllinder"><button class="shape-button"></button><label class="shape-label">Cyllinder</label>
-            </div>
-            <div class="shape tetrahedron"><button class="shape-button"></button><label class="shape-label">Tetrahedron</label>
-            </div>
-            <div class="shape cone"><button class="shape-button"></button><label class="shape-label">Cone</label>
-            </div>
-             
-            
-           
           </div>
         </div>
-        <div class="initial-values-box box">
-          <div class="box-header">
-            <h2 class="box-heading">Cylinder</h2>
-            <p class="box-subtitle">Type in the dimensions</p>
-          </div>
-          <div class="box-body initial-values">
-            <div class="inputs">
-              
-              
+        <div class="results-area area">
+          <div class="results-box box">
+            <div class="box-header">
+              <h2 class="box-heading">Results</h2>
+              <p class="box-subtitle">Results of the calculations</p>
             </div>
-
-          </div>
-          <div class="button-box">
-            <button class="button button-action">Calculate</button>
+            <div class="box-body results">
+            </div>
+            <canvas id='graph' class="box-body graph"></canvas>
           </div>
         </div>
-      </div>
-      <div class="results-area area">
-        <div class="results-box box">
-
-          <div class="box-header">
-            <h2 class="box-heading">Results</h2>
-            <p class="box-subtitle">Results of the calculations</p>
-          </div>
-
-          <div class="box-body results">
-            
-          </div>
-
-          <canvas id='graph' class="box-body graph"></canvas>
-
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <script src="/dist/js/shapes.min.js" defer></script>

@@ -4,7 +4,7 @@
 @use "./icons" as *;
 @use "./colors" as *;
 @use "./scrollbar" as *;
-
+@use "./darkTheme" as *;
 
 * {
 	box-sizing: border-box;
@@ -22,18 +22,62 @@ html {
 
 body {
 	margin: 0 auto;
-	padding: $mobile-app-padding;
-	max-width: $mobile-app-max-width;
 	font-family: $default-font, sans-serif;
 	font-size: $mobile-text;
 }
 
 .container {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
-	flex-direction: column;
+	max-width: $mobile-app-max-width;
+	padding: $mobile-app-padding;
 	gap: $mobile-container-gap;
+}
+
+.content {
+	display: flex;
+	gap: $desktop-area-gap;
+	flex-grow: 1;
+}
+
+.options {
+	flex-direction: row;
+	align-items: center;
+}
+
+.theme-changer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: $mobile-box-gap;
+}
+
+.theme-button {
+	position: relative;
+	border-radius: 50px;
+	border: solid 2px $main;
+	width: 36px;
+	height: 22px;
+	outline: none;
+	cursor: pointer;
+}
+
+.theme-button::after {
+	content: "";
+	width: 14px;
+	height: 14px;
+	background: $main;
+	top: 2px;
+	left: 2px;
+	border-radius: 50%;
+	position: absolute;
+	transition: left 0.3s ease-in-out;
+}
+
+.theme-active::after {
+	left: 16px;
 }
 
 .area {
@@ -58,7 +102,7 @@ body {
 
 .box-heading {
 	margin-bottom: 10px;
-
+	color: $text-dark;
 }
 
 .box-subtitle {
@@ -105,10 +149,10 @@ body {
 	background-color: $element-background;
 	background-size: contain;
 	pointer-events: none;
-	transition: outline .1s ease;
+	transition: outline 0.1s ease;
 }
 
-.shape:hover > .shape-button{
+.shape:hover > .shape-button {
 	outline: 2px solid $main-highlight;
 }
 
@@ -163,7 +207,8 @@ label {
 	font-size: $mobile-text;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
 	background-color: $main-highlight;
 }
 

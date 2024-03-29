@@ -1,9 +1,11 @@
+const main = document.querySelector('.main')
 const shapesArray = Object.keys(shapes).map(key => shapes[key])
 const shapesButtons = Array.from(document.querySelectorAll(".shape"))
 const inputsArea = document.querySelector(".inputs")
 const resultsArea = document.querySelector(".results")
 
 const calculateButton = document.querySelector(".button-action")
+const themeButton = document.querySelector('.theme-button')
 
 let currentShape
 let index
@@ -12,6 +14,21 @@ let variables = []
 let resultsLabels = []
 let resultsValues = []
 let methods = []
+
+let theme = ''
+
+const changeTheme = () => {
+	if (theme === '') {
+		theme = 'dark'
+		main.classList.add('dark')
+		themeButton.classList.add('theme-active')
+	}
+	else {
+		theme = ''
+		main.classList.remove('dark')
+		themeButton.classList.remove('theme-active')
+	}
+}
 
 const pickShape = e => {
 	shapesButtons.forEach(shape => {
@@ -102,3 +119,4 @@ shapesButtons.forEach(shapeButton => {
 })
 
 calculateButton.addEventListener("click", getInputValues)
+themeButton.addEventListener('click', changeTheme)

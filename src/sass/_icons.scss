@@ -1,17 +1,17 @@
-$icon-square: url("/dist/img/shapes/square.png");
-$icon-rectangle: url("/dist/img/shapes/rectangle.png");
-$icon-circle: url("/dist/img/shapes/circle.png");
-$icon-triangle: url("/dist/img/shapes/triangle.png");
-$icon-rhomboid: url("/dist/img/shapes/rhomboid.png");
-$icon-rhombus: url("/dist/img/shapes/rhombus.png");
-$icon-deltoid: url("/dist/img/shapes/deltoid.png");
-$icon-trapeze: url("/dist/img/shapes/trapeze.png");
-$icon-cube: url("/dist/img/shapes/cube.png");
-$icon-prism: url("/dist/img/shapes/prism.png"); 
-$icon-sphere: url("/dist/img/shapes/sphere.png"); 
-$icon-cylinder: url("/dist/img/shapes/cylinder.png"); 
-$icon-tetrahedron: url("/dist/img/shapes/tetrahedron.png"); 
-$icon-cone: url("/dist/img/shapes/cone.png"); 
+$icon-square: url("./dist/img/shapes/square.png");
+$icon-rectangle: url("./dist/img/shapes/rectangle.png");
+$icon-circle: url("./dist/img/shapes/circle.png");
+$icon-triangle: url("./dist/img/shapes/triangle.png");
+$icon-rhomboid: url("./dist/img/shapes/rhomboid.png");
+$icon-rhombus: url("./dist/img/shapes/rhombus.png");
+$icon-deltoid: url("./dist/img/shapes/deltoid.png");
+$icon-trapeze: url("./dist/img/shapes/trapeze.png");
+$icon-cube: url("./dist/img/shapes/cube.png");
+$icon-prism: url("./dist/img/shapes/prism.png"); 
+$icon-sphere: url("./dist/img/shapes/sphere.png"); 
+$icon-cylinder: url("./dist/img/shapes/cylinder.png"); 
+$icon-tetrahedron: url("./dist/img/shapes/tetrahedron.png"); 
+$icon-cone: url("./dist/img/shapes/cone.png"); 
 
 .square .shape-button {
 	background-image: $icon-square;
