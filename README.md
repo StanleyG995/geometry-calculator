@@ -36,12 +36,12 @@ The goal of the application is calculating basic properties of geometric figures
 ## Work in progress
 
  <ul>
-   <li>double checking the correctness of the used math formulas</li>
-   <li>adding menu for changing the units of both input and results values </li>
-   <li>adding a graph of a selected figure with accurate dimensions(Fabric.js)</li>
-   <li>improving accessibility (keyboard based control, missing alt tags)</li>
-   <li>expanding the collection of figures</li>
-   <li>adding dark theme</li>
+   <li>☐ double checking the correctness of the used math formulas</li>
+   <li>☐ adding menu for changing the units of both input and results values </li>
+   <li>☐ adding a graph of a selected figure with accurate dimensions(Fabric.js)</li>
+   <li>☐ improving accessibility (keyboard based control, missing alt tags)</li>
+   <li>☐ expanding the collection of figures</li>
+   <li>☑ adding dark theme</li>
   </ul>
 
 ## Feedback
