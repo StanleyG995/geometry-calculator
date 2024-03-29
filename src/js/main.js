@@ -72,7 +72,8 @@ const getShapeInfo = () => {
 
 const setFields = () => {
 
-g
+	shapeName.innerText = currentShape.querySelector('.shape-label').innerText
+
 	inputs.forEach(input => {
 		const newInput = document.createElement("div")
 		newInput.innerHTML = `
