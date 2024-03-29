@@ -4,8 +4,12 @@ const shapesButtons = Array.from(document.querySelectorAll(".shape"))
 const inputsArea = document.querySelector(".inputs")
 const resultsArea = document.querySelector(".results")
 
+const shapeName = document.querySelector('.current-shape-name')
+
 const calculateButton = document.querySelector(".button-action")
 const themeButton = document.querySelector('.theme-button')
+
+
 
 let currentShape
 let index
@@ -67,6 +71,9 @@ const getShapeInfo = () => {
 }
 
 const setFields = () => {
+
+	shapeName.innerText = currentShape.querySelector('.shape-label').innerText
+
 	inputs.forEach(input => {
 		const newInput = document.createElement("div")
 		newInput.innerHTML = `
