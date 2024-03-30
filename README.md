@@ -3,7 +3,7 @@
 
   <h1 align="center">Geometry calculator</h1>
 
-  <h2 align="center">Version 1.0.0</h2>
+  <h2 align="center">Version 1.1.3</h2>
 
   <h3 align='center'><strong>This project is in a WIP state, much of the code is yet to be written, many functions will be changed and refined over time!</strong></h3>
    
