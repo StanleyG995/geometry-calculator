@@ -31,13 +31,13 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
-	max-width: $mobile-app-max-width;
 	padding: $mobile-app-padding;
 	gap: $mobile-container-gap;
 }
 
 .content {
 	display: flex;
+	flex-direction: column;
 	gap: $desktop-area-gap;
 	flex-grow: 1;
 }
@@ -45,6 +45,7 @@ body {
 .options {
 	flex-direction: row;
 	align-items: center;
+	gap: $mobile-box-gap;
 }
 
 .theme-changer {
