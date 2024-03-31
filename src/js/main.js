@@ -88,7 +88,7 @@ const setFields = () => {
 	resultsLabels.forEach(resultLabel => {
 		const newResult = document.createElement("div")
 		newResult.innerHTML = `
-        <p class="result">${resultLabel} = <span class="result-value" </span></p>
+        <p class="result">${resultLabel} = <span class="result-value">0</span></p>
         `
 		resultsArea.appendChild(newResult)
 	})
