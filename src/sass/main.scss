@@ -76,6 +76,10 @@ body {
 	transition: left 0.3s ease-in-out;
 }
 
+.theme-button:hover::after {
+	background-color: $main-highlight;
+}
+
 .theme-active::after {
 	left: 16px;
 }

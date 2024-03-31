@@ -4,15 +4,25 @@
 
 .dark {
 
+	.app-name, .box-heading {
+		color: $text-dark--dark;
+	}
+	
+
 	background-color: $app-background--dark;
 	color: $text-light--dark;
 
 	.theme-button {
 		border: solid 2px $main--dark;
+		background: $element-background--dark;
 	}
 
 	.theme-button::after {
 		background: $main--dark;
+	}
+
+	.theme-button:hover::after {
+		 background-color: $main-highlight--dark;
 	}
 
 	.box {
