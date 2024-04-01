@@ -11,7 +11,7 @@ const shapes = {
 				return sideA ** 2
 			},
 		},
-		icon: '../../dist/img/shapes/square.png',
+		icon: "./dist/img/shapes/square.png",
 		alt: "square icon",
 	},
 
@@ -28,7 +28,7 @@ const shapes = {
 				return sideA * sideB
 			},
 		},
-		icon: '../../dist/img/shapes/rectangle.png',
+		icon: "./dist/img/shapes/rectangle.png",
 		alt: "rectanlge icon",
 	},
 
@@ -45,7 +45,7 @@ const shapes = {
 				return Math.PI * radius ** 2
 			},
 		},
-		icon: '../../dist/img/shapes/circle.png',
+		icon: "./dist/img/shapes/circle.png",
 		alt: "circle icon",
 	},
 
@@ -78,7 +78,7 @@ const shapes = {
 				}
 			},
 		},
-		icon: '../../dist/img/shapes/triangle.png',
+		icon: "./dist/img/shapes/triangle.png",
 		alt: "triangle icon",
 	},
 
@@ -92,7 +92,7 @@ const shapes = {
 				return (diagonalA * diagonalB) / 2
 			},
 		},
-		icon: '../../dist/img/shapes/rhomboid.png',
+		icon: "./dist/img/shapes/rhomboid.png",
 		alt: "rhomboid icon",
 	},
 
@@ -106,7 +106,7 @@ const shapes = {
 				return sideA * height
 			},
 		},
-		icon: '../../dist/img/shapes/rhombus.png',
+		icon: "./dist/img/shapes/rhombus.png",
 		alt: "rhombus icon",
 	},
 
@@ -120,7 +120,7 @@ const shapes = {
 				return (diagonalA * diagonalB) / 2
 			},
 		},
-		icon: '../../dist/img/shapes/deltoid.png',
+		icon: "./dist/img/shapes/deltoid.png",
 		alt: "deltoid icon",
 	},
 
@@ -135,7 +135,7 @@ const shapes = {
 				return ((baseA + baseB) / 2) * height
 			},
 		},
-		icon: '../../dist/img/shapes/trapeze.png',
+		icon: "./dist/img/shapes/trapeze.png",
 		alt: "trapeze icon",
 	},
 
@@ -152,7 +152,7 @@ const shapes = {
 				return sideA ** 3
 			},
 		},
-		icon: '../../dist/img/shapes/cube.png',
+		icon: "./dist/img/shapes/cube.png",
 		alt: "cube icon",
 	},
 
@@ -171,7 +171,7 @@ const shapes = {
 				return sideA * sideB * height
 			},
 		},
-		icon: '../../dist/img/shapes/prism.png',
+		icon: "./dist/img/shapes/prism.png",
 		alt: "prism icon",
 	},
 
@@ -188,7 +188,7 @@ const shapes = {
 				return (4 / 3) * Math.PI * radius ** 3
 			},
 		},
-		icon: '../../dist/img/shapes/sphere.png',
+		icon: "./dist/img/shapes/sphere.png",
 		alt: "speher icon",
 	},
 
@@ -206,7 +206,7 @@ const shapes = {
 				return Math.PI * radius ** 2 * height
 			},
 		},
-		icon: '../../dist/img/shapes/cyllinder.png',
+		icon: "./dist/img/shapes/cyllinder.png",
 		alt: "cyllinder icon",
 	},
 
@@ -223,7 +223,7 @@ const shapes = {
 
 			volume: function () {},
 		},
-		icon: '../../dist/img/shapes/tetrahedron.png',
+		icon: "./dist/img/shapes/tetrahedron.png",
 		alt: "tetrahedron icon",
 	},
 
@@ -237,12 +237,12 @@ const shapes = {
 			area: function (radius, slant, height) {
 				return Math.PI * radius * (radius + slant)
 			},
-	
+
 			volume: function (radius, slant, height) {
 				return (Math.PI * radius ** 2 * height) / 3
 			},
 		},
-		icon: '../../dist/img/shapes/cone.png',
+		icon: "./dist/img/shapes/cone.png",
 		alt: "cone icon",
 	},
 }
