@@ -105,7 +105,8 @@ body {
 	border-bottom: solid 1px $element-stroke;
 }
 
-.app-name, .box-heading {
+.app-name,
+.box-heading {
 	color: $text-dark;
 }
 
@@ -146,6 +147,9 @@ body {
 }
 
 .shape-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 70px;
 	width: 70px;
 	border: none;
@@ -154,6 +158,11 @@ body {
 	background-size: contain;
 	pointer-events: none;
 	transition: outline 0.1s ease;
+}
+
+.shape-icon {
+	flex-grow: 1;
+	height: 100%;
 }
 
 .shape:hover > .shape-button {
@@ -251,4 +260,3 @@ label {
 }
 
 @import "./media";
-

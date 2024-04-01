@@ -1,15 +1,17 @@
-const main = document.querySelector('.main')
-const shapesArray = Object.keys(shapes).map(key => shapes[key])
+const main = document.querySelector(".main")
+const shapesDimensions = Object.keys(shapes).map(key => shapes[key].dimensions)
+const shapesFormulas = Object.keys(shapes).map(key => shapes[key].formulas)
+const shapesAlts = Object.keys(shapes).map(key => shapes[key].alt)
+const shapesSources = Object.keys(shapes).map(key => shapes[key].icon)
 const shapesButtons = Array.from(document.querySelectorAll(".shape"))
+const shapesIcons = Array.from(document.querySelectorAll(".shape-icon"))
 const inputsArea = document.querySelector(".inputs")
 const resultsArea = document.querySelector(".results")
 
-const shapeName = document.querySelector('.current-shape-name')
+const shapeName = document.querySelector(".current-shape-name")
 
 const calculateButton = document.querySelector(".button-action")
-const themeButton = document.querySelector('.theme-button')
-
-
+const themeButton = document.querySelector(".theme-button")
 
 let currentShape
 let index
@@ -19,18 +21,24 @@ let resultsLabels = []
 let resultsValues = []
 let methods = []
 
-let theme = ''
+let theme = ""
+
+const setShapesIcons = () => {
+	for (let i = 0; i < shapesIcons.length; i++) {
+		shapesIcons[i].src = shapesSources[i]
+		shapesIcons[i].alt = shapesAlts[i]
+	}
+}
 
 const changeTheme = () => {
-	if (theme === '') {
-		theme = 'dark'
-		main.classList.add('dark')
-		themeButton.classList.add('theme-active')
-	}
-	else {
-		theme = ''
-		main.classList.remove('dark')
-		themeButton.classList.remove('theme-active')
+	if (theme === "") {
+		theme = "dark"
+		main.classList.add("dark")
+		themeButton.classList.add("theme-active")
+	} else {
+		theme = ""
+		main.classList.remove("dark")
+		themeButton.classList.remove("theme-active")
 	}
 }
 
@@ -52,27 +60,30 @@ const getShapeInfo = () => {
 	inputs = []
 	methods = []
 	resultsLabels = []
-    resultsValues=[]
+	resultsValues = []
 	inputsArea.innerHTML = ""
 	resultsArea.innerHTML = ""
 
-	for (let i = 0; i < shapesArray.length; i++) {
+	for (let i = 0; i < shapesDimensions.length; i++) {
 		if (i === indexOfButtons) {
-			for (let key in shapesArray[i]) {
-				if (typeof shapesArray[i][key] === "number") {
-					inputs.push(key)
-				} else {
-					methods.push(shapesArray[i][key])
-					resultsLabels.push(key)
-				}
+			for (let key in shapesDimensions[i]) {
+				inputs.push(key)
+			}
+		}
+	}
+
+	for (let i = 0; i < shapesFormulas.length; i++) {
+		if (i === indexOfButtons) {
+			for (let key in shapesFormulas[i]) {
+				resultsLabels.push(key)
+				methods.push(shapesFormulas[i][key])
 			}
 		}
 	}
 }
 
 const setFields = () => {
-
-	shapeName.innerText = currentShape.querySelector('.shape-label').innerText
+	shapeName.innerText = currentShape.querySelector(".shape-label").innerText
 
 	inputs.forEach(input => {
 		const newInput = document.createElement("div")
@@ -107,7 +118,7 @@ const getInputValues = () => {
 }
 
 const calculate = () => {
-    resultsValues = []
+	resultsValues = []
 	const results = document.getElementsByClassName("result-value")
 	methods.forEach(method => {
 		resultsValues.push(method(...variables))
@@ -116,14 +127,13 @@ const calculate = () => {
 	for (let i = 0; i < resultsValues.length; i++) {
 		results[i].innerText = resultsValues[i].toFixed(2)
 	}
-
 }
 
-console.log(shapesArray)
+setShapesIcons()
 
 shapesButtons.forEach(shapeButton => {
 	shapeButton.addEventListener("click", pickShape)
 })
 
 calculateButton.addEventListener("click", getInputValues)
-themeButton.addEventListener('click', changeTheme)
+themeButton.addEventListener("click", changeTheme)
