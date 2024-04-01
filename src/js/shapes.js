@@ -65,12 +65,12 @@ const shapes = {
 					return true
 				}
 			},
-			circumference: function (sideA, sideB, sideC, validation) {
+			circumference: function (sideA, sideB, sideC) {
 				if (validation) {
 					return sideA + sideB + sideC
 				}
 			},
-			area: function (sideA, sideB, sideC, area, validation) {
+			area: function (sideA, sideB, sideC, area) {
 				if (validation) {
 					return Math.sqrt(
 						area * (area - sideA) * (area - sideB) * (area - sideC)
